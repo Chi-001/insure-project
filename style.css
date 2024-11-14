@@ -1,0 +1,305 @@
+/* Basic styling */
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+h1{
+    color: #fff;
+    margin: 0;
+    font-family: 'DM Serif Display';
+}
+
+/* Navigation Style */
+
+.navbar{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   background-color: white;
+   position: fixed;
+   z-index: 1000;
+}
+
+.nav-div{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 70px;
+    color:  hsl(0, 0%, 98%);
+}
+
+.navbar .nav-links .menu a{
+    color:   hsl(273, 4%, 51%);
+}
+
+.navbar .nav-links .menu a:hover{
+    color:  hsl(256, 26%, 20%);
+}
+
+/* Navbar */
+
+.menu{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    align-items: center;
+}
+
+.me{
+    color: hsl(256, 26%, 20%);
+}
+
+#btn{
+    border: 1px solid hsl(256, 26%, 20%);
+    color: hsl(256, 26%, 20%);
+    padding: 15px;
+    background-color: transparent;
+    width: 120px;
+    font-weight: 700;
+    
+}
+
+/* Making my Navbar responsive */
+
+input[type="checkbox"]{
+    display: none;
+}
+
+/* hamburger starts*/
+
+.hamburger{
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* Applying media queries */
+
+@media(max-width:767px){
+    .menu{
+        display: none;
+        position: absolute;
+        background-color: hsl(256, 26%, 20%);
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px;
+    }
+
+    .menu li:hover{
+        display: inline-block;
+        background-color: rgb(177, 136, 81);
+        transition: 1s ease;
+    }
+
+    .menu li+li{
+        margin-left: 12px;
+    }
+
+    input[type="checkbox"]:checked~.menu{
+        display: block;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+}
+
+.bar{
+    height: 1px;
+    width: 150px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+#firstdiv{
+    background-color: hsl(256, 26%, 20%);
+    height: 600px;
+    width: 100%;
+    position: relative;
+    margin-top: 70px;
+}
+
+#firstdiv h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+#firstdiv p{
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+#btn2{
+    border: 1px solid white;
+    color: #fff;
+    padding: 15px;
+    background-color: transparent;
+    width: 120px;
+}
+
+#btn:hover{
+    background-color: hsl(256, 26%, 20%);
+    color: #fff;
+}
+
+#btn2:hover{
+    background-color: #fff;
+    color: hsl(256, 26%, 20%);
+}
+
+#introimg{
+    position: relative;
+    left: 910px;
+    z-index: 7;
+}
+
+.human p{
+    line-height: 30px;
+}
+
+.wert{
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 130px;
+}
+
+.wert h1{
+    margin: 0px;
+}
+
+.human{
+    margin-right: 20px;
+}
+
+.ugh{
+    margin-top: 200px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#introimg2{
+    position: absolute;
+    top: 500px;
+    left: 2px;
+}
+
+#different{
+    color: #000;
+    margin-top: 70px;
+    font-size: 50px;
+}
+
+#section h3{
+    font-family: 'DM Serif Display';
+}
+#section{
+    display: flex;
+    gap: 40px;
+}
+
+#section p{
+    line-height: 30px;
+    color:  hsl(273, 4%, 51%);
+}
+
+.bar2{
+    background-color: hsl(216, 30%, 68%);
+    width: 150px;
+    height: 1px;
+    margin-top: 400px;
+}
+
+#section img{
+    margin-top: 50px;
+}
+
+.he{
+    margin-top: 20px;
+}
+
+.pg{
+    margin-top: 30px;
+}
+
+#thirddiv{
+    background-color: hsl(256, 26%, 20%);
+    height: 250px;
+    width: 1020px;
+    margin-bottom: 300px;
+    margin-top: 100px;
+    display: flex;
+}
+#thirddiv h1{
+    font-size: 50px;
+    font-family: 'Karla';
+}
+
+#pat{
+    position: absolute;
+    left: 750px;
+    top: 1609px;
+    background-size: contain;
+}
+
+#btn3{
+    border: 1px solid white;
+    color: white;
+    padding: 15px;
+    background-color: transparent;
+    width: 180px;
+    letter-spacing: 2px;
+}
+
+#btn3:hover{
+    background-color: white;
+    color: hsl(256, 26%, 20%);
+}
+
+#find{
+    margin: 90px;
+    margin-top: 70px;
+    z-index: 6;
+}
+
+.work{
+    margin: 100px;
+    position: absolute;
+    right: 150px;
+}
+
+footer{
+    margin-bottom: 2px;
+    height: 350px;
+    width: 100%;
+    background-color: red;
+}
+
+.ins{
+    display: flex;
+}
